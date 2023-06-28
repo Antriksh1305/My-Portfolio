@@ -1,49 +1,76 @@
 const body = document.querySelector('body'),
-darkmode = document.querySelector('#chk'),
-nav = Array.from(document.getElementsByClassName('nav__link'));
+    lightmode = document.querySelector('#chk'),
+    nav = Array.from(document.getElementsByClassName('nav__link')),
+    root = document.documentElement,
+    workCard = document.querySelectorAll('.work__card'),
+    workItem = document.querySelectorAll('.work__item');
 
-darkmode.addEventListener('click',()=>{
-    if(body.classList.contains('dark')){
-        body.classList.remove('dark');
+    console.log(workCard);
+
+lightmode.addEventListener('click', () => {
+    if (body.classList.contains('light')) {
+        body.classList.remove('light');
+        root.style.setProperty('--text-color', '#cdc7c7');
     }
-    else{
-        body.classList.add('dark');
+    else {
+        body.classList.add('light');
+        root.style.setProperty('--text-color', '#797575');
     }
 });
 
-function removeactive(){
+function getIDheight(id) {
+    const elem_height = document.getElementById(id).offsetTop;
+    return elem_height;
+}
+
+function removeactive() {
     nav.forEach(ele => {
         ele.classList.remove('active-link');
     })
 }
 
-window.addEventListener('scroll',()=>{
+window.addEventListener('scroll', () => {
     let height = 0 - document.documentElement.getBoundingClientRect().top;
     removeactive();
-    if(height < 440){
-        nav[0].classList.add('active-link');
-    }
-    else if(height < 1080){
-        nav[1].classList.add('active-link');
-    }
-    else if(height < 1680){
-        nav[2].classList.add('active-link');
-    }
-    else if(height < 2999){
-        nav[3].classList.add('active-link');
-    }
-    else if(height < 3580){
+    if (height > getIDheight('contact') - 300) {
         nav[4].classList.add('active-link');
     }
-    else{
-        nav[5].classList.add('active-link');
+    else if (height > getIDheight('work') - 300) {
+        nav[3].classList.add('active-link');
+    }
+    else if (height > getIDheight('skills') - 300) {
+        nav[2].classList.add('active-link');
+    }
+    else if (height > getIDheight('about') - 200) {
+        nav[1].classList.add('active-link');
+    }
+    else {
+        nav[0].classList.add('active-link');
     }
 });
 
-const sound = new Audio();
 
-window.onclick = function playSound() {
-    sound.src = '/my_files/my_portfolio_files/audio/click_sound.mp3';
+workItem.forEach(ele => {
+    ele.addEventListener('click', () => {
+        workItem.forEach(ele => {
+            ele.classList.remove('active-work');
+        })
+        ele.classList.add('active-work');
+        workCard.forEach(card => {
+            card.classList.remove('active-work-card');
+        });
+        setTimeout(() => {
+            workCard.forEach(card => {
+                if (card.classList.contains(ele.id)) {
+                    card.classList.add('active-work-card');
+                }
+            });
+        }, 10);
+    });
+});
+
+const sound = new Audio();
+window.onclick = function (event) {
+    sound.src = '/public/audio/click_sound.mp3';
     sound.play();
 }
-
