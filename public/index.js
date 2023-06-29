@@ -3,9 +3,8 @@ const body = document.querySelector('body'),
     nav = Array.from(document.getElementsByClassName('nav__link')),
     root = document.documentElement,
     workCard = document.querySelectorAll('.work__card'),
-    workItem = document.querySelectorAll('.work__item');
-
-    console.log(workCard);
+    workItem = document.querySelectorAll('.work__item'),
+    sound = new Audio();
 
 lightmode.addEventListener('click', () => {
     if (body.classList.contains('light')) {
@@ -69,7 +68,6 @@ workItem.forEach(ele => {
     });
 });
 
-const sound = new Audio();
 window.onclick = function (event) {
     sound.src = '/public/audio/click_sound.mp3';
     sound.play();
