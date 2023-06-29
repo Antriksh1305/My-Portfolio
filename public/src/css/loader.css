@@ -2,6 +2,25 @@ html,
 body {
       margin: 0 auto;
       height: 100%;
+      scroll-behavior:auto;
+}
+
+::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+}
+
+::-webkit-scrollbar-track {
+      background: #494d54;
+}
+
+::-webkit-scrollbar-thumb {
+      background: #282C34;
+      border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+      background: #6e6e6e;
 }
 
 pre {

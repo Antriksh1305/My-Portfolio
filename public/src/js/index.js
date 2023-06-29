@@ -4,6 +4,7 @@ const body = document.querySelector('body'),
     root = document.documentElement,
     workCard = document.querySelectorAll('.work__card'),
     workItem = document.querySelectorAll('.work__item'),
+    Github_img = document.querySelector('.about__Github_imgBox'),
     sound = new Audio();
 
 lightmode.addEventListener('click', () => {
@@ -66,6 +67,10 @@ workItem.forEach(ele => {
         }, 10);
     });
 });
+
+window.onload = () => {
+    Github_img.children[0].attributes[0].value = 'https://github-readme-stats.vercel.app/api?username=Antriksh1305&show_icons=true&bg_color=241e20&text_color=ffffff&title_color=7dba78&icon_color=7dba78&hide_border=true&border_radius=18&cache_seconds=84000';
+}
 
 window.onclick = function (event) {
     sound.src = '/public/assets/audio/click_sound.mp3';

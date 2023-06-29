@@ -45,8 +45,8 @@ function feedbacker() {
                         area.scrollTop = area.scrollHeight;
                         setTimeout(
                               function () {
-                                    $(".load").fadeOut(800);
-                              }, 1300);
+                                    $(".load").fadeOut(600);
+                              }, 500);
                   }
             }, time);
 }
