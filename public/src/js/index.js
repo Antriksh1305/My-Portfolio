@@ -48,7 +48,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-
 workItem.forEach(ele => {
     ele.addEventListener('click', () => {
         workItem.forEach(ele => {
@@ -69,6 +68,6 @@ workItem.forEach(ele => {
 });
 
 window.onclick = function (event) {
-    sound.src = '/public/audio/click_sound.mp3';
+    sound.src = '/public/assets/audio/click_sound.mp3';
     sound.play();
 }
