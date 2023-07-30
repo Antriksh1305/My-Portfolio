@@ -12,15 +12,26 @@ function ready() {
     document.querySelector('body').children[0].style.display = 'block';
     document.querySelector('body').children[1].style.display = 'block';
     document.querySelector('body').children[2].style.display = 'block';
+
+    if (localStorage.getItem('theme') === 'light') {
+        body.classList.add('light');
+        root.style.setProperty('--text-color', '#797575');
+    }
+    else {
+        body.classList.remove('light');
+        root.style.setProperty('--text-color', '#cdc7c7');
+    }
 }
 
 lightmode.addEventListener('click', () => {
     if (body.classList.contains('light')) {
         body.classList.remove('light');
+        localStorage.setItem('theme', 'dark');
         root.style.setProperty('--text-color', '#cdc7c7');
     }
     else {
         body.classList.add('light');
+        localStorage.setItem('theme', 'light');
         root.style.setProperty('--text-color', '#797575');
     }
 });

@@ -4,6 +4,7 @@
     --first-color: #7dba78;
     --text-color: #cdc7c7;
     --text-color-light: #918888;
+    --body-light: #f2f2f2;
     --body-color: #234e70;
     --container-color: #241e20;
     --skills-popup-color: #585858;
@@ -37,7 +38,7 @@
 }
 
 body.light {
-    background: #fff;
+    background: var(--body-light);
 }
 
 .checkbox {
@@ -408,7 +409,7 @@ img {
 }
 
 .button-about:hover {
-    background-color: var(--body-color);
+    background-color: var(--body-light);
     border: 2px solid var(--first-color);
     color: var(--first-color);
     box-shadow: 0 0 10px #7eb67ace;
@@ -751,6 +752,7 @@ img {
 }
 
 .footer {
+    width: 101%;
     background-color: var(--first-color)
 }
 
