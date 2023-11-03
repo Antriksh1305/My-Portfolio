@@ -7,13 +7,13 @@
 
 - 🔭 &nbsp;I’m currently working on something cool :wink:
 
-- 🌱 I’m currently learning **Backend Development and Machine Learning**
+- 🌱 I’m currently learning **Data Science and Machine Learning**
 
-- 👯 I’m looking to collaborate on **Machine Learning Projects**
+- 👯 I’m looking to collaborate on **App Development and Machine Learning Projects**
 
 - 👨‍💻 &nbsp;Read more about my projects at [www.antrikshcodes.tech](www.antrikshcodes.tech)
 
-- 💬 Ask me about **CSS / Javascript / React Native / Backend Development**
+- 💬 Ask me about **CSS / Javascript / React Native**
 
 - 📫 How to reach me **antrikshgupta01@gmail.com**
 
@@ -44,7 +44,8 @@
 <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/bootstrap-4.svg" alt="bootstrap" width="40" height="40"/> </a> 
 <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> 
 <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-illustrator-cc-icon.svg" alt="illustrator" width="40" height="40"/> </a> 
-<a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a> 
+<a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/> </a>
+<a href="https://redux.js.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="redux" width="40" height="40"/> </a> 
 <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> 
 <a href="" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/react-native-firebase-1.svg" alt="reactnativefirebase" width="40" height="40"/> </a> 
 <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nodejs-1.svg" alt="nodejs" width="40" height="40"/> </a> 
